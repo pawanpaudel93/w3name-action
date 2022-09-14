@@ -19,10 +19,10 @@ test('test runs', () => {
   }
   const output = cp.execFileSync(np, [ip], options).toString()
   expect(output).toEqual(`Publishing the new w3name revision
-https://w3s.link/ipns//k51qzi5uqu5dji1t4vshma1ohjf7zdpw7iy72tcdo3malrl32zj784zeqeplpf
+https://w3s.link/ipns/k51qzi5uqu5dji1t4vshma1ohjf7zdpw7iy72tcdo3malrl32zj784zeqeplpf
 
 ::set-output name=name::k51qzi5uqu5dji1t4vshma1ohjf7zdpw7iy72tcdo3malrl32zj784zeqeplpf
 
-::set-output name=url::https://w3s.link/ipns//k51qzi5uqu5dji1t4vshma1ohjf7zdpw7iy72tcdo3malrl32zj784zeqeplpf
+::set-output name=url::https://w3s.link/ipns/k51qzi5uqu5dji1t4vshma1ohjf7zdpw7iy72tcdo3malrl32zj784zeqeplpf
 `)
 })

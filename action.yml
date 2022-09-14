@@ -11,6 +11,8 @@ inputs:
   outputs:
     name:
       description: 'IPNS name'
+    url:
+      description: 'IPNS url'
 runs:
   using: 'node16'
   main: 'dist/index.js'

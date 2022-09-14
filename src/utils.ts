@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-unresolved
 import * as Name from 'w3name'
 
-const basePath = 'https://w3s.link/ipns/'
+const baseUrl = 'https://w3s.link/ipns'
 
 function pad(n: string, width: number, z = '0'): string {
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n
@@ -71,5 +71,5 @@ export {
   loadName,
   hexStringToUint8Array,
   getErrorMessage,
-  basePath
+  baseUrl
 }

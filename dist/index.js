@@ -48,7 +48,7 @@ function run() {
             const signingKey = core.getInput('signing_key');
             const cid = core.getInput('cid');
             const name = yield (0, publish_1.publishToW3Name)(signingKey, cid);
-            const url = `${utils_1.basePath}/${name}`;
+            const url = `${utils_1.baseUrl}/${name}`;
             core.info(url);
             core.setOutput('name', name);
             core.setOutput('url', url);
@@ -174,11 +174,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.basePath = exports.getErrorMessage = exports.hexStringToUint8Array = exports.loadName = exports.arrayBufferToHexString = void 0;
+exports.baseUrl = exports.getErrorMessage = exports.hexStringToUint8Array = exports.loadName = exports.arrayBufferToHexString = void 0;
 // eslint-disable-next-line import/no-unresolved
 const Name = __importStar(__nccwpck_require__(7901));
-const basePath = 'https://w3s.link/ipns/';
-exports.basePath = basePath;
+const baseUrl = 'https://w3s.link/ipns';
+exports.baseUrl = baseUrl;
 function pad(n, width, z = '0') {
     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
