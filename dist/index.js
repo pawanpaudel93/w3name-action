@@ -103,6 +103,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.publishToW3Name = void 0;
+// eslint-disable-next-line import/no-unresolved
 const Name = __importStar(__nccwpck_require__(7901));
 const core = __importStar(__nccwpck_require__(2186));
 const utils_1 = __nccwpck_require__(918);
@@ -174,6 +175,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.basePath = exports.getErrorMessage = exports.hexStringToUint8Array = exports.loadName = exports.arrayBufferToHexString = void 0;
+// eslint-disable-next-line import/no-unresolved
 const Name = __importStar(__nccwpck_require__(7901));
 const basePath = 'https://w3s.link/ipns/';
 exports.basePath = basePath;

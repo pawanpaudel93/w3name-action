@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import * as Name from 'w3name'
 import * as core from '@actions/core'
 import {loadName, getErrorMessage} from './utils'

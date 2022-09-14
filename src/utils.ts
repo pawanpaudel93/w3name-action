@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import * as Name from 'w3name'
 
 const basePath = 'https://w3s.link/ipns/'
