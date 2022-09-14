@@ -1,11 +1,16 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'w3name action'
+description: 'Publish your app names to w3name service'
+author: 'pawanpaudel93'
 inputs:
-  milliseconds: # change this
+  cid:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'IPFS content Id (cid)'
+  signing_key:
+    required: true
+    description: 'w3name signing key to publish names'
+  outputs:
+    name:
+      description: 'IPNS name'
 runs:
   using: 'node16'
   main: 'dist/index.js'

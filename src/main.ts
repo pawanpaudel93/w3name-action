@@ -1,16 +1,16 @@
 import * as core from '@actions/core'
-import {wait} from './wait'
+import {publishToW3Name} from './publish'
+import {basePath} from './utils'
 
 async function run(): Promise<void> {
   try {
-    const ms: string = core.getInput('milliseconds')
-    core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
-
-    core.debug(new Date().toTimeString())
-    await wait(parseInt(ms, 10))
-    core.debug(new Date().toTimeString())
-
-    core.setOutput('time', new Date().toTimeString())
+    const signingKey = core.getInput('signing_key')
+    const cid = core.getInput('cid')
+    const name = await publishToW3Name(signingKey, cid)
+    const url = `${basePath}/${name}`
+    core.info(url)
+    core.setOutput('name', name)
+    core.setOutput('url', url)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
