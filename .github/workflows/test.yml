@@ -21,4 +21,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          milliseconds: 1000
+          cid: 'bafybeid4t4bqrnzzeiujyqhxho6wpxx7jhnwhmiraridaubvl4fxkoc4ye'
+          signing_key: '08011240dc7def0868004c53cfba4edbf023bdc9b348dc538d75632990b6678faa8cfed88523b6ccf4614a4e4f0eb20c7d0fecd61ff1032d3a26ff2ad9e226bb97575023'

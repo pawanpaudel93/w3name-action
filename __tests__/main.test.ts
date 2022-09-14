@@ -4,8 +4,7 @@ import * as path from 'path'
 import fs from 'fs'
 import {expect, test} from '@jest/globals'
 
-const cid =
-  'bafybeifpw7nrh374rzfcxpaw3bkp6fr7djmujg5wvib6ma7i7n76t3k53q/lidel.jpg'
+const cid = 'bafybeid4t4bqrnzzeiujyqhxho6wpxx7jhnwhmiraridaubvl4fxkoc4ye'
 
 const {signingKey} = JSON.parse(fs.readFileSync('./w3name.json').toString())
 
