@@ -29,7 +29,7 @@
     "w3name": "^1.0.6"
   },
   "devDependencies": {
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.11.7",
     "@typescript-eslint/parser": "^5.8.1",
     "@vercel/ncc": "^0.34.0",
     "eslint": "^8.23.1",
